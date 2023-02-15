@@ -1,0 +1,33 @@
+h1{
+    color:aqua;
+    background-color: black;
+    display:block;
+}
+
+p {
+    color: crimson;
+    display:inline;
+}
+
+nav{
+    display: block;
+} 
+
+.navigation {   
+    background-color:"red";
+}
+
+.nav-item {
+    float:left;
+    padding:20px;
+    list-style: none;
+}
+
+.myform{
+    background-color:"green";
+    display:inline;
+}
+
+#intro_line {
+    background-color: dimgrey;
+}
