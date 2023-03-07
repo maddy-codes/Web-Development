@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="styleIndex.css">
 </head>
 <body>
-    <header><h1>We are surrounded by data but starved for insights.</h1></header>
+    <header><h1 class="quote">We are surrounded by data but starved for insights.</h1></header>
     <nav>
         <ul class="navigationBar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Projects</a></li>
-            <li><a href="contact.html">Contact Me!</a></li>
-            <li><a href="work_ex.html">Work Experience</a></li>
-            <li><a href="site_report.html">Site Report</a></li>
+            <a href="index.html"><li id="home">Home</li></a>
+            <a href="portfolio.html"><li id="portfolio">Projects</li></a>
+            <a href="contact.html"><li id="contact">Contact Me!</li></a>
+            <a href="work_ex.html"><li id="work">Experience </li></a>
+            <a href="site_report.html"><li id="report">Site Report</li></a>
         </ul>
     </nav>
     <main>
-        <section class="name">
+        <section class="name"   >
             Jatin Arora
         </section>
-        <section>
+        <section class="intro">
             Hi there! I'm Jatin Arora.<br> I am a data analyst and Machine Learning Specialist.<br>Please take a look at my website to lean more about me. 
+            <a class="moreButton" href="portfolio.html" >Learn More!</a>
         </section>
     </main>
     <aside>
@@ -31,9 +32,9 @@
     </aside>
     <footer>
         <ul>
-            <li><a href="">Kaggle</a></li>
-            <li><a href=""></a>Github</li>
-            <li><a href=""></a>LinkedIn</li>
+            <li class="footlist"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-512.png" alt="kagglelogo" class="logo"><a href="">Kaggle</a></li>
+            <li class="footlist"><img src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png" alt="githublogo" class="logo"><a href="">Github</a></li>
+            <li class="footlist"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="Linkedinlogo " class = "logo"> <a href="">LinkedIn</a></li>
         </ul>
     </footer>
 </body>

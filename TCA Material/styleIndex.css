@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&family=Tilt+Prism&display=swap');
+
 *{
     padding:0;
     margin:0;
+    border: none;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
 }
 body{
     display:grid;
-    grid-template-columns: 5% auto auto;
+    grid-template-columns: 10% auto auto;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header"
@@ -14,43 +19,193 @@ body{
 }
 
 header{
-    background-color: #56a3a6;
+    background-color: black;
     grid-area: header;
     padding: 1.5em;
-    border: 1px solid black ;
+    justify-content: space-evenly;
+    /**align-items: center;
+    **/
 }
 
 nav{
-    background-color: #56a3a6;
+    background-color: black;
     color:white;
-    text-decoration: none;
     grid-area: nav;
-    border: 1px solid black ;
-    display:flex;
-    flex-direction:column;
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;  
+    list-style:none;
 }
 
-nav li {
-    width:100%;
-    height:80%;
+.navigationBar li{
+    display: flex;  
+    justify-content: center;  
+    flex-direction: column; 
+    padding-top: 30%;
+    padding-bottom:40%;
+    text-decoration: none;
+    text-align: center;
+    color:ghostwhite;
 }
 
-nav li :first-child{
-    margin-top: 10%;
+nav li:first-child{
+    margin-top: 20%;
+    text-decoration: none;
 }
 
 main{
-    background-color: #d4eac8;
+    background-color: ghostwhite;
     grid-area: main;
+    /**border-left: 2px;
+    border-left-color: black;
+    border-left-style : dashed;**/
 }
 
 aside{
-    background-color: #cad49d;
+    background-color: ghostwhite;
     grid-area: aside;
     image-orientation: 60deg;
 }
 
 footer{
-    background-color: #d4eac8;
+    background-color: black;
     grid-area: footer;
+    height:150%;
+}
+
+
+.moreButton{
+    display: block;
+    border: 2px solid black;    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    background-color:black;
+    padding: 0.5em;
+    font-size: 18pt; 
+    border: 10px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+.moreButton:hover{
+    background-color: rgb(0, 87, 193);
+    margin-top: 5%;
+    color: ghostwhite;
+    margin-left: 30%;
+    font-size: 1.2em;
+}
+
+img{
+    padding: 10%;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    overflow:hidden;
+    max-height: 100%;
+    max-width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 9em;
+}
+
+h1{
+    align-items: center;
+    margin-left: 19.5%;
+}
+
+.name{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 50pt;
+    margin-top: 3em;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.intro{
+    padding:1.5em;
+    margin-top: 0.0001%;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo{
+    display: inline;
+    width:1em;
+    height:1em;
+    padding:0;
+    margin:0;
+}
+
+.footlist a{
+    text-decoration: none;
+    color:white;
+}
+
+.footlist{
+    font-size: 15pt;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-left: 4%;
+    list-style: none;
+    display: inline-block;
+}
+
+.footlist:first-child{
+    margin-left: 2%;
+}
+
+#home:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+#portfolio:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+#contact:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+#work:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+#report:hover{
+    background-color: ghostwhite;
+    color:black;
+    text-decoration:none;
+    font-size: 1.25em;
+}
+
+.quote{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40pt;
+    text-align: center;
+    padding:0;
+    margin:0; 
+    color: ghostwhite;  
 }
