@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header>Please fill the form below to contact me!</header>
+    <main>
+        <form action="mailto:jatinarora2689@gmail.com?subject=Contact Form  " method="GET">
+            <label class="qureyTypel">Please select your Query type</span>
+                <select class="qureyTypeo">
+                    <option label="Personal">Personal</option>
+                    <option label="Business">Business</option>
+                    <option label="Network">Network</option>
+                </select>
+                <label for="myinput" class="namel">Please Wirte your name</label><input type="text" name="myinput"
+                    id="myinput" class="nameo">
+                <label for="query" class="typel">Type your query</label>
+                <textarea name="big_input" id="query" class="typeo"></textarea>
+                <label for="self" class="empl"><input type="radio" name="employment" id="self" class="empo">
+                    Self-Employeed</label>
+                <label for="private" class="empl"><input type="radio" name="employment" id="private" class="empo">
+                    Private Employment</label>
+                <label for="gov" class="empl"><input type="radio" name="employment" id="gov" class="empo"> Government
+                    Employment</label>
+                <label for="passcode" class="passl">Type your Secret Code (if any) <input type="password" id="passcode"
+                        class="passo"><label>
+                        <label for="tc" class="tcl"><input type="checkbox" name="tandc" id="tc" required
+                                class="tco">Agree to our <a href="#">terms and conditions</a></label>
+                        <input type="submit" name="submit" class="sub">
+        </form>
+
+        <!--<form action="#" method="POST">
+            <input type="text" name="myinput">
+            <input type="submit" name="submit">
+        </form>-->
+    </main>
+    <footer>
+        Please wait for 2-3 business days for my reply!
+    </footer>
+</body>
+
+</html>

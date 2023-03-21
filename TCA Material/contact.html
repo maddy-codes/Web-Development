@@ -1,20 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecontact.css">
     <title>Document</title>
 </head>
+
 <body>
+
+
+
+
+
+
+
+
+
+
+
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="work_ex.html">Work Experience</a></li>
-            <li><a href="site_report.html">Site Report</a></li>
+            <li id="home"><a href="index.html">Home</a>
+                <ul>
+                    <li><a href="#">one</a></li>
+                    <li><a href="#">two</a></li>
+                    <li><a href="#">three</a></li>
+                </ul>
+            </li>
+            <li id="portfolio"><a href="portfolio.html">Projects</a>
+                <ul>
+                    <li><a href="#">one</a></li>
+                    <li><a href="#">two</a></li>
+                    <li><a href="#">three</a></li>
+                </ul>
+            </li>
+            <li id="contact"><a href="contact.html">Contact Me!</a>
+                <ul>
+                    <li><a href="#">one</a></li>
+                    <li><a href="#">two</a></li>
+                    <li><a href="#">three</a></li>
+                </ul>
+            </li>
+            <li id="work"><a href="work_ex.html">Experience</a>
+                <ul>
+                    <li><a href="#">one</a></li>
+                    <li><a href="#">two</a></li>
+                    <li><a href="#">three</a></li>
+                </ul>
+            </li>
+            <li id="report"><a href="site_report.html">Site Report</a>
+                <ul>
+                    <li><a href="#">one</a></li>
+                    <li><a href="#">two</a></li>
+                    <li><a href="#">three</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <form action="mailto:jatinarora2689@gmail.com?Contact Form" method="get">
+            <div>Contact Form</div>
+            <label for="name">Enter your Name*</label>
+            <input type="text" placeholder="Jon Doe" name="name" id="name" required>
+
+
+            <label for="email">Enter your Email Address*</label>
+            <input type="text" placeholder="jondoe@example.com" name="email" id="email" required>
+
+
+            <label for="phone">Enter your Phone Number</label>
+            <input type="text" placeholder="+447587336110" name="phone" id="phone">
+
+
+            <label for="query">Please Enter your query*</label>
+            <textarea name="query" id="query" cols="30" rows="10" placeholder="Please Enter Your Query Here"
+                required></textarea>
+
+
+            <label for="general">
+                <input type="radio" name="querytype" id="general" value="radio">
+                Suggestion</label>
+
+            <label for="job">
+                <input type="radio" name="querytype" id="job" value="other">
+                Job opportunity</label>
+
+            <label for="other">
+                <input type="radio" name="querytype" id="other">
+                Other</label>
+
+            <label for="industry">Please Select your Job Industry</label>
+            <select name="industry" id="industry">
+                <option value="it">Choose...</option>
+                <option value="it">IT</option>
+                <option value="bis&fin"> Business & Financial </option>
+                <option value="architecture"> Architecture and engineering </option>
+                <option value="health"> Healthcare </option>
+                <option value="hotel"> Hospitality </option>
+                <option value="other"> Other </option>
+            </select>
+
+
+            <label for="tandc"><input type="checkbox" id="tandc" required>
+                Please Agree to Our <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a></label>
+
+
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li class="footlist"><img
+                    src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-512.png"
+                    alt="kagglelogo" class="logo"><a href="">Kaggle</a></li>
+            <li class="footlist"><img
+                    src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png"
+                    alt="githublogo" class="logo"><a href="">Github</a></li>
+            <li class="footlist"> <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                    alt="Linkedinlogo " class="logo"> <a href="">LinkedIn</a></li>
+        </ul>
+    </footer>
 </body>
+
 </html>

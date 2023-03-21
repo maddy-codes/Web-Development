@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&family=Tilt+Prism&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+
+
+
+
+nav{
+    background-color: black;
+}
+
+nav ul{
+    grid-area: nav;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    text-align: center;
+    color: ghostwhite;
+}
+
+nav>ul>li>a{
+    color:ghostwhite;
+}
+
+li{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: ghostwhite;
+}
+
+nav > ul > li{
+    position:relative;
+    font-size: 1.4em;
+}
+
+nav  ul  ul{
+    position:absolute;  
+    display: none;
+    width:100%;
+    margin-top: 9%;
+}
+
+nav li:hover ul{
+    display: block;
+    animation: dropdown 1s ease-in-out;
+    
+}
+
+nav li ul li{
+    padding-top: 0.5em;
+    padding-bottom:0.5em ;
+}
+
+nav li ul li:hover{
+    background-color: ghostwhite;
+    color:black ;
+}
+
+nav li ul li a{
+    color:white;
+}
+
+nav li ul li:hover a{
+    color:black;
+}
+
+@keyframes dropdown{
+    0%{
+        background-color: #ca1e1e;
+        transform: translate(-100%,0%);
+    }
+
+
+    100%{
+        background-color: black;
+        transform: translate(0%,0%);
+    }
+}
+
+nav li ul li{
+    padding-top: 0.5em;
+    padding-bottom:0.5em ;
+}
+
+nav li ul li:hover{
+    background-color: ghostwhite;
+    color:black ;
+}
+
+
+#home a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+#portfolio a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+#contact a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+#work a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+#report a:hover{
+    color: red;
+    text-decoration: none;
+}

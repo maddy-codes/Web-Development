@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&family=Tilt+Prism&display=swap');
 
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     border: none;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
 }
-body{
-    display:grid;
+
+body {
+    display: grid;
     grid-template-columns: 10% auto auto;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header"
-    "nav aside main"
-    "footer footer footer"
+    grid-template-areas:
+        "header header header"
+        "nav aside main"
+        "footer footer footer"
     ;
 }
 
-header{
+header {
     background-color: black;
     grid-area: header;
     padding: 1.5em;
@@ -27,133 +28,170 @@ header{
     **/
 }
 
-nav{
+nav {
     background-color: black;
-    color:white;
+    color: white;
     grid-area: nav;
-    display: flex;  
+    display: flex;
     justify-content: center;
-    flex-direction: column;  
-    list-style:none;
+    flex-direction: column;
+    list-style: none;
 }
 
-.navigationBar li{
-    display: flex;  
-    justify-content: center;  
-    flex-direction: column; 
+.navigationBar li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding-top: 30%;
-    padding-bottom:40%;
+    padding-bottom: 40%;
     text-decoration: none;
     text-align: center;
-    color:ghostwhite;
+    color: ghostwhite;
+    font-size: 1.2em;
 }
 
-nav li:first-child{
+
+
+nav li:first-child {
     margin-top: 20%;
     text-decoration: none;
 }
 
-main{
+main {
     background-color: ghostwhite;
     grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+
+
     /**border-left: 2px;
     border-left-color: black;
     border-left-style : dashed;**/
 }
 
-aside{
+aside {
     background-color: ghostwhite;
     grid-area: aside;
     image-orientation: 60deg;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
 }
 
-footer{
+footer {
     background-color: black;
     grid-area: footer;
-    height:150%;
+    height: 150%;
 }
 
 
-.moreButton{
+.moreButton {
     display: block;
-    border: 2px solid black;    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    background-color:black;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
     padding: 0.5em;
-    font-size: 18pt; 
-    border: 10px;
-    color:white;
+    font-size: 1.5em;
+    color: white;
     text-decoration: none;
+    align-items: center;
     text-align: center;
     justify-content: center;
     margin-top: 2em;
-    margin-left: 30%;
-    margin-right: 30%;
-    
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.moreButton:hover{
-    background-color: rgb(0, 87, 193);
-    margin-top: 5%;
+.moreButton:hover {
+
     color: ghostwhite;
-    margin-left: 30%;
-    font-size: 1.2em;
+    animation: button 2s 1;
 }
 
-img{
-    padding: 10%;
-    border-top-right-radius: 20%;
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-    overflow:hidden;
-    max-height: 100%;
-    max-width: 20em;
-    display: block;
+
+@keyframes button {
+
+    0%,
+    100% {
+        font-size: 1.5em;
+    }
+
+    50% {
+        font-size: 2em;
+    }
+}
+
+
+
+img {
+    border-radius: 100%;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    margin-top: 9em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-h1{
+img:hover {
+    animation: rise 5s infinite;
+}
+
+@keyframes rise {
+    0% {}
+
+    50% {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+    }
+}
+
+h1 {
     align-items: center;
     margin-left: 19.5%;
 }
 
-.name{
+.name {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
     font-size: 50pt;
     margin-top: 3em;
-    margin-bottom: -10px;
+    margin-bottom: -10%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.intro{
-    padding:1.5em;
-    margin-top: 0.0001%;
+.intro {
     font-size: 1.5em;
+    align-items: center;
     text-align: center;
+    justify-content: center;
     font-family: 'Quicksand', sans-serif;
 }
 
-.logo{
+.logo {
     display: inline;
-    width:1em;
-    height:1em;
-    padding:0;
-    margin:0;
+    width: 1em;
+    height: 1em;
+    padding: 0;
+    margin: 0;
 }
 
-.footlist a{
+.footlist a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-.footlist{
+.footlist {
     font-size: 15pt;
     justify-content: space-evenly;
     margin-top: 2%;
@@ -162,50 +200,91 @@ h1{
     display: inline-block;
 }
 
-.footlist:first-child{
+.footlist:first-child {
     margin-left: 2%;
 }
 
-#home:hover{
-    background-color: ghostwhite;
-    color:black;
-    text-decoration:none;
-    font-size: 1.25em;
+
+
+@keyframes big {
+
+    0%,
+    100% {
+        background-color: white;
+        color: black;
+        font-size: 1.5em;
+    }
+
+    50% {
+        background-color: black;
+        font-size: 1.8em;
+        color: white;
+    }
 }
 
-#portfolio:hover{
+#home:hover {
+    animation: big 1.5s ease-out;
     background-color: ghostwhite;
-    color:black;
-    text-decoration:none;
-    font-size: 1.25em;
+    color: black;
+    text-decoration: none;
+
 }
 
-#contact:hover{
+#portfolio:hover {
+    animation: big 1.5s ease-out;
     background-color: ghostwhite;
-    color:black;
-    text-decoration:none;
-    font-size: 1.25em;
+    color: black;
+    text-decoration: none;
 }
 
-#work:hover{
+#contact:hover {
+    animation: big 1.5s ease-out;
     background-color: ghostwhite;
-    color:black;
-    text-decoration:none;
-    font-size: 1.25em;
+    color: black;
+    text-decoration: none;
+
 }
 
-#report:hover{
+#work:hover {
+    animation: big 1.5s ease-out;
     background-color: ghostwhite;
-    color:black;
-    text-decoration:none;
-    font-size: 1.25em;
+    color: black;
+    text-decoration: none;
+
 }
 
-.quote{
+#report:hover {
+    animation: big 1.5s ease-out;
+    background-color: ghostwhite;
+    color: black;
+    text-decoration: none;
+
+}
+
+.quote {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40pt;
+    font-size: 3em;
     text-align: center;
-    padding:0;
-    margin:0; 
-    color: ghostwhite;  
+    padding: 0;
+    margin: 0;
+    color: blue;
+    animation: slide 20s infinite ease-out;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0%{
+        transform: translate(-100vw,0vh);
+    }
+    3%{
+        tansform: translate(0vw,0vh);
+        color: white;
+    }
+    70%{
+        transform: translate(10vw,0vh);
+        color: white;
+    }
+    100%{
+        display: none;
+    }
 }
