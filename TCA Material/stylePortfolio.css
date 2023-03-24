@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 
 
 * {
@@ -20,22 +21,24 @@ body {
         "main"
         "footer"
     ;
+    background-color: whitesmoke;
 }
 
 
 
 
 nav{
-    background-color: black;
+    background-color: #0B132B;
 }
 
 nav ul{
     grid-area: nav;
-    background-color: black;
+    background-color: #0B132B;
     display: grid;
     grid-template-columns: repeat(5,auto);
     text-align: center;
     color: ghostwhite;
+    padding-left:0;
 }
 
 nav>ul>li>a{
@@ -43,21 +46,21 @@ nav>ul>li>a{
 }
 
 li{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
     color: ghostwhite;
 }
 
 nav > ul > li{
     position:relative;
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 
 nav  ul  ul{
     position:absolute;  
     display: none;
     width:100%;
-    margin-top: 9%;
+    margin-top: 0.7em;
     padding-left: 0;
 }
 
@@ -73,8 +76,8 @@ nav li ul li{
 }
 
 nav li ul li:hover{
-    background-color: ghostwhite;
-    color:black ;
+    color:white ;
+    border: 4px solid whitesmoke;
 }
 
 nav li ul li a{
@@ -82,18 +85,18 @@ nav li ul li a{
 }
 
 nav li ul li:hover a{
-    color:black;
+    color:white;
 }
 
 @keyframes dropdown{
     0%{
-        background-color: #ca1e1e;
+        background-color: whitesmoke;
         transform: translate(-100%,0%);
     }
 
 
     100%{
-        background-color: black;
+        background-color: #0B132B;
         transform: translate(0%,0%);
     }
 }
@@ -103,35 +106,34 @@ nav li ul li{
     padding-bottom:0.5em ;
 }
 
-nav li ul li:hover{
-    background-color: ghostwhite;
-    color:black ;
-}
-
-
 #home a:hover{
     color: red;
     text-decoration: none;
+    font-weight: 800;
 }
 
 #portfolio a:hover{
     color: red;
     text-decoration: none;
+    font-weight: 800;
 }
 
 #contact a:hover{
     color: red;
     text-decoration: none;
+    font-weight: 800;
 }
 
 #work a:hover{
     color: red;
     text-decoration: none;
+    font-weight: 800;
 }
 
 #report a:hover{
     color: red;
     text-decoration: none;
+    font-weight: 800;
 }
 
 
@@ -193,16 +195,16 @@ section a {
     padding: 0px;
     margin: 0px;
     grid-area: proj_one;
-    border-bottom: 2px dashed black;
     flex-wrap: wrap;
     padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
     color: ghostwhite;
 }
 
 .tableau {
     height: 40vh;
     width: 50vh;
-    border: 3px solid black;
     padding: 0;
     margin: 0;
 }
@@ -213,7 +215,6 @@ section a {
     text-align: left;
     padding-left: 5%;
     margin-bottom: 1%;
-    border: 2px dotted black;
 }
 
 .description :first-child {
@@ -228,6 +229,7 @@ section a {
 h1 {
     font-size: 2em;
     padding-bottom: 0;
+    font-family: 'Tiro Devanagari Hindi', serif;
 }
 
 .description>p {
@@ -282,7 +284,6 @@ h1 {
 .project3 {
     width: auto;
     height: auto;
-    background-color: blue;
     padding: 20px;
     grid-area: proj_three;
     display: flex;
@@ -370,10 +371,13 @@ h1 {
 }
 
 section:nth-child(odd) {
-    background-color: black;
+    background-color: #0B132B;
     color: ghostwhite;
 }
 
+section:nth-child(even) {
+    color: #0B132B;
+}
 .contact {
     padding: 0;
     margin: 0;
@@ -381,9 +385,10 @@ section:nth-child(odd) {
 }
 
 .contact>p {
-    padding: 5lvh;
+    padding: 3lvh;
     font-size: 1.5em;
-    background-color: black;
+    background-color:#0B132B;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .contact>p{
@@ -393,7 +398,7 @@ section:nth-child(odd) {
 .contact>p>a>span {
     background-color: ghostwhite;
     color: black;
-    padding: 3lvh;
+    padding: 2lvh;
     border-radius: 80%;
     margin-left: 60%;
 }
@@ -406,7 +411,7 @@ section:nth-child(odd) {
 
 
 footer {
-    background-color: black;
+    background-color:#0B132B;
     grid-area: footer;
 
 }
@@ -431,7 +436,7 @@ footer {
     margin-left: 4%;
     list-style: none;
     display: inline-block;
-    padding:2%;
+    padding:1%;
     margin: 0;
 }
 
