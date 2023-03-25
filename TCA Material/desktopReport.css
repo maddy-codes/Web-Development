@@ -1,0 +1,108 @@
+nav{
+    background-color: #0B132B;
+}
+
+nav ul{
+    grid-area: nav;
+    background-color: #0B132B;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    text-align: center;
+    color: ghostwhite;
+    padding-left:0;
+}
+
+nav>ul>li>a{
+    color:ghostwhite;
+}
+
+li{
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    color: ghostwhite;
+}
+
+nav > ul > li{
+    position:relative;
+    font-size: 1.1em;
+}
+
+nav  ul  ul{
+    position:absolute;  
+    display: none;
+    width:100%;
+    margin-top: 0.7em;
+    padding-left: 0;
+}
+
+nav li:hover ul{
+    display: block;
+    animation: dropdown 1s ease-in-out;
+    
+}
+
+nav li ul li{
+    padding-top: 0.5em;
+    padding-bottom:0.5em ;
+}
+
+nav li ul li:hover{
+    color:white ;
+    border: 4px solid whitesmoke;
+}
+
+nav li ul li a{
+    color:white;
+}
+
+nav li ul li:hover a{
+    color:white;
+}
+
+@keyframes dropdown{
+    0%{
+        background-color: whitesmoke;
+        transform: translate(-100%,0%);
+    }
+
+
+    100%{
+        background-color: #0B132B;
+        transform: translate(0%,0%);
+    }
+}
+
+nav li ul li{
+    padding-top: 0.5em;
+    padding-bottom:0.5em ;
+}
+
+#home a:hover{
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#portfolio a:hover{
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#contact a:hover{
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#work a:hover{
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#report a:hover{
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}

@@ -1,0 +1,130 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer"
+    ;
+    background-color: whitesmoke;
+}
+header{
+    display: none ;
+}
+
+nav {
+    background-color: #655356;
+}
+
+nav ul {
+    grid-area: nav;
+    background-color: #0B132B;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    text-align: center;
+    color: black;
+    padding-left: 0;
+}
+
+nav>ul>li>a {
+    color: ghostwhite;
+}
+
+li {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    color: ghostwhite;
+}
+
+nav>ul>li {
+    position: relative;
+    font-size: 1.1em;
+}
+
+nav ul li ul {
+    position: absolute;
+    display: none;
+    width: 100%;
+    margin-top: 0.7em;
+}
+
+nav li:hover ul {
+    display: block;
+    animation: dropdown 1s ease-in-out;
+
+}
+
+nav li ul li {
+    padding-top: 1em;
+    padding-bottom: 200em;
+}
+
+nav li ul li:hover {
+    background-color: ghostwhite;
+    color: black;
+}
+
+nav li ul li a {
+    color: white;
+}
+
+nav li ul li:hover a {
+    color: white;
+}
+
+@keyframes dropdown {
+    0% {
+        background-color: ghostwhite;
+        transform: translate(-100%, 0%);
+    }
+
+
+    100% {
+        background-color: #0B132B;
+        transform: translate(0%, 0%);
+    }
+}
+
+nav li ul li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+nav li ul li:hover {
+    border: 4px solid ghostwhite;
+    color: white;
+    background-color: #0B132B;
+}
+
+
+#home a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#portfolio a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#contact a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#work a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#report a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+}

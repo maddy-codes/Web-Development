@@ -11,16 +11,6 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 10% auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header header header"
-        "nav aside main"
-        "footer footer footer"
-    ;
-}
 
 header {
     background-color: #0B132B;
@@ -29,35 +19,6 @@ header {
     justify-content: space-evenly;
     /**align-items: center;
     **/
-}
-
-nav {
-    background-color: #0B132B;
-    color: white;
-    grid-area: nav;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    list-style: none;
-}
-
-.navigationBar li {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 30%;
-    padding-bottom: 40%;
-    text-decoration: none;
-    text-align: center;
-    color: ghostwhite;
-    font-size: 1em;
-}
-
-
-
-nav li:first-child {
-    margin-top: 20%;
-    text-decoration: none;
 }
 
 main {
@@ -167,7 +128,6 @@ h1 {
     font-weight: 800;
     font-size: 50pt;
     margin-top: 3em;
-    margin-bottom: -10%;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -228,41 +188,40 @@ h1 {
 }
 
 #home:hover {
-    animation: big 1.5s ease-out;
     background-color: ghostwhite;
     color: black;
     text-decoration: none;
-
+    font-size: 1.2em;
 }
 
 #portfolio:hover {
-    animation: big 1.5s ease-out;
     background-color: ghostwhite;
     color: black;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 #contact:hover {
-    animation: big 1.5s ease-out;
     background-color: ghostwhite;
     color: black;
     text-decoration: none;
+    font-size: 1.2em;
 
 }
 
 #work:hover {
-    animation: big 1.5s ease-out;
     background-color: ghostwhite;
     color: black;
     text-decoration: none;
+    font-size: 1.2em;
 
 }
 
 #report:hover {
-    animation: big 1.5s ease-out;
     background-color: ghostwhite;
     color: black;
     text-decoration: none;
+    font-size: 1.2em;
 
 }
 

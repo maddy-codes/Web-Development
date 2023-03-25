@@ -1,0 +1,107 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "aside"
+        "nav"
+        "main"
+        "footer"
+    ;
+}
+
+nav li{
+    list-style-type: none;
+    color:whitesmoke;
+    font-size: 1.2em;
+    border-bottom: 2px solid white;
+    padding: 5%;
+}
+
+
+.name {
+    margin-bottom: 1em;
+}
+
+.moreButton {
+    margin-bottom: 1em;
+}
+
+img {
+    margin-top: 10%;
+    margin-bottom: -20%;
+}
+
+.showNav {
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+}
+
+.showNav::before {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid #fff;
+}
+
+nav {
+    display: block;
+    background-color: #0B132B;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+}
+
+#clicked .on {
+    display: block;
+}
+
+#clicked .off {
+    display: none;
+}
+
+#clicked:target .on {
+    display: none;
+}
+
+#clicked:target .off {
+    display: block;
+}
+
+#clicked:target nav{
+    display: none;
+}
+
+#home:hover{
+    color: #0B132B;
+    font-weight: 800;
+ }
+ 
+ #portfolio:hover{
+     color: #0B132B;
+     font-weight: 800;
+ }
+ 
+ #contact:hover{
+     color: #0B132B;
+     font-weight: 800;
+ }
+ 
+ #work:hover{
+     color: #0B132B;
+     font-weight: 800;
+ }
+ 
+ #report:hover{
+     color: #0B132B;
+     font-weight: 800;
+ }
+ 
