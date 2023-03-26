@@ -53,11 +53,22 @@ img {
 nav {
     display: block;
     background-color: #0B132B;
+    color: white;
     position: fixed;
     top: 0;
     left: 50%;
     width: 50%;
     height: 100vh;
+    animation: slid 2s ease-in-out;
+}
+
+@keyframes slid {
+    0%{
+        transform: translate(100%,0);
+    }
+    100%{
+
+    }
 }
 
 #clicked .on {
@@ -82,7 +93,6 @@ nav {
 
 #home:hover{
     color: #0B132B;
-    font-weight: 800;
  }
  
  #portfolio:hover{
@@ -92,16 +102,61 @@ nav {
  
  #contact:hover{
      color: #0B132B;
-     font-weight: 800;
  }
  
  #work:hover{
      color: #0B132B;
-     font-weight: 800;
  }
  
  #report:hover{
      color: #0B132B;
+ }
+ .name{
+    padding-right: 0;
+ }
+ .intro{
+    padding-right: 0;
+ }
+
+
+
+ #home:hover a{
+    font-weight: 800;
+ }
+ 
+ #portfolio:hover {
      font-weight: 800;
  }
  
+ #contact:hover a{
+     font-weight: 800;
+ }
+ 
+ #work:hover a{
+     font-weight: 800;
+ }
+ 
+ #report:hover a{
+     font-weight: 800;
+ }
+
+
+ #home a{
+    color: white;
+ }
+ 
+ #portfolio a{
+     color: white;
+ }
+ 
+ #contact a{
+     color: white;
+ }
+ 
+ #work a{
+     color: white;
+ }
+ 
+ #report a{
+     color: white;
+ }

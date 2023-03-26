@@ -38,7 +38,6 @@ main {
 aside {
     background-color: whitesmoke;
     grid-area: aside;
-    image-orientation: 60deg;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -93,11 +92,12 @@ footer {
 
 
 img {
-    border-radius: 100%;
+    border-radius: 100px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    height: 50%;
+    width: 95%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -123,24 +123,34 @@ h1 {
     margin-left: 19.5%;
 }
 
+div{
+    padding:0;
+}
+
 .name {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-weight: 800;
-    font-size: 50pt;
-    margin-top: 3em;
+    font-size: 4em;
+    margin-top: 2em;
     text-align: center;
     align-items: center;
     justify-content: center;
     color: #0B132B;
+    padding-right: 2em;
+    margin-bottom:0;
+    padding-bottom: 0;
 }
 
 .intro {
-    font-size: 1.5em;
+    font-size: 1.2em;
     align-items: center;
     text-align: center;
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
     color: #0B132B;
+    padding-right: 6em;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .logo {
@@ -149,6 +159,7 @@ h1 {
     height: 1em;
     padding: 0;
     margin: 0;
+    border: 4px groove #0B132B;
 }
 
 .footlist a {
@@ -225,6 +236,30 @@ h1 {
 
 }
 
+
+
+#home:hover a {
+    color: black;
+}
+
+#portfolio:hover  a{
+    color: black;
+}
+
+#contact:hover a{
+    color: black;
+}
+
+#work:hover a {
+    color: black;
+}
+
+#report:hover a {
+    color: black;
+
+}
+
+
 .quote {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 2em;
@@ -239,10 +274,6 @@ h1 {
 @keyframes slide {
     0%{
         transform: translate(-100vw,0vh);
-    }
-    3%{
-        tansform: translate(0vw,0vh);
-        color: white;
     }
     70%{
         transform: translate(1.5vw,0vh);

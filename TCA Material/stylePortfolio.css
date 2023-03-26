@@ -98,6 +98,7 @@ footer {
     height: 1em;
     padding: 0;
     margin: 0;
+    border: 4px groove #0B132B;
 }
 
 .footlist a {

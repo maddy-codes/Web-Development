@@ -11,9 +11,6 @@ body {
     background-color: whitesmoke;
 }
 
-
-
-
 nav{
     background-color: #0B132B;
 }
@@ -22,7 +19,7 @@ nav ul{
     grid-area: nav;
     background-color: #0B132B;
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: auto 10% auto auto auto;
     text-align: center;
     color: ghostwhite;
     padding-left:0;
@@ -46,7 +43,7 @@ nav > ul > li{
 nav  ul  ul{
     position:absolute;  
     display: none;
-    width:100%;
+    width:100% ;
     margin-top: 0.7em;
     padding-left: 0;
 }
@@ -191,7 +188,7 @@ h1 {
 }
 
 .blank1 {
-    height: 5.2%vh;
+    height: 5.2lvh;
     width: 10.2lvw;
 }
 
@@ -233,7 +230,7 @@ h1 {
 }
 
 .blank2 {
-    height: 5.2%vh;
+    height: 5.2lvh;
     width: 5.4lvw;
 }
 
@@ -279,7 +276,7 @@ h1 {
 }
 
 .blank3 {
-    height: 5.2%vh;
+    height: 5.2lvh;
     width: 5.4lvw;
 }
 

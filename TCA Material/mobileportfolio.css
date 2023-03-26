@@ -39,6 +39,16 @@ nav {
     left: 50%;
     width: 50%;
     height: 100vh;
+    animation: slide 2s ease-in-out;
+}
+
+@keyframes slide {
+    0%{
+        transform: translate(100%,0);
+    }
+    100%{
+
+    }
 }
 
 #clicked .on {

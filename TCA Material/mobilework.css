@@ -1,3 +1,7 @@
+header{
+    padding: 1em;
+}
+
 nav li{
     list-style-type: none;
     color:whitesmoke;
@@ -39,6 +43,16 @@ nav {
     left: 50%;
     width: 50%;
     height: 100vh;
+    animation: slide 2s ease-in-out;
+}
+
+@keyframes slide {
+    0%{
+        transform: translate(100%,0);
+    }
+    100%{
+
+    }
 }
 
 #clicked .on {
@@ -202,7 +216,7 @@ nav>ul>li>ul{
     padding: 0.40em;
     padding-left: 0;
     margin: 0;
-    text-align: justify;
+    text-align: center;
     margin-right: 1em;
 }
 
@@ -252,7 +266,7 @@ nav>ul>li>ul{
     padding: 0.40em;
     padding-left: 0;
     margin: 0;
-    text-align: justify;
+    text-align: center;
 }
 
 .project3 {
@@ -298,7 +312,7 @@ nav>ul>li>ul{
     padding: 0.40em;
     padding-left: 0;
     margin: 0px;
-    text-align: justify;
+    text-align: center;
 
 }
 
@@ -345,5 +359,5 @@ nav>ul>li>ul{
     padding: 0.40em;
     padding-left: 0;
     margin: 0px;
-    text-align: justify;
+    text-align: center;
 }
